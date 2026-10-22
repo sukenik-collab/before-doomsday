@@ -57,16 +57,22 @@ export function PlanScreen({ ctx }: { ctx: Ctx }) {
               <div class="caps">Plan #{plan.planId ?? '····'}</div>
               <h1 class="site-title" style="font-size:clamp(40px,6.5vw,80px)">{copy.plan.heading}</h1>
             </div>
-            <label class="name-field caps muted" style="flex:0 1 300px">
-              {copy.plan.nameLabel}
-              <input
-                type="text"
-                maxLength={24}
-                value={plan.name ?? ''}
-                placeholder="e.g. Bob's plan"
-                onInput={(e) => ctx.setName((e.target as HTMLInputElement).value)}
-              />
-            </label>
+            <div class="name-field" style="flex:0 1 440px">
+              <label class="caps muted" for="plan-name">{copy.plan.nameLabel}</label>
+              <div class="name-row">
+                <input
+                  id="plan-name"
+                  type="text"
+                  maxLength={24}
+                  value={plan.name ?? ''}
+                  placeholder="e.g. Bob's plan"
+                  onInput={(e) => ctx.setName((e.target as HTMLInputElement).value)}
+                />
+                <button class="btn" style="min-height:44px;font-size:16px;padding:0 16px;white-space:nowrap" onClick={share}>
+                  {copy.plan.share}
+                </button>
+              </div>
+            </div>
           </div>
         }
       />
@@ -81,9 +87,6 @@ export function PlanScreen({ ctx }: { ctx: Ctx }) {
           <div class="label">Worth it</div>
           <div class="big">~{hours(p.worthIt.minutes)}</div>
           <div class="muted" style="font-size:13px">{copy.plan.titles(p.worthIt.entries.length)}</div>
-        </div>
-        <div class="tile share">
-          <button class="btn block" onClick={share}>{copy.plan.share}</button>
         </div>
       </div>
 
