@@ -33,6 +33,9 @@ export function Landing({ ctx }: { ctx: Ctx }) {
       <main>
         <h1>{copy.landing.headline}</h1>
         <p class="sub">{copy.landing.subline}</p>
+        <a class="btn block" style="margin-top:20px;max-width:420px" href="#checklist">
+          {resume ? copy.landing.resume : copy.landing.start}
+        </a>
         <ol class="steps">
           {copy.landing.steps.map((s, i) => (
             <li key={i}>
@@ -42,12 +45,7 @@ export function Landing({ ctx }: { ctx: Ctx }) {
           ))}
         </ol>
       </main>
-      <div class="landing-cta">
-        <a class="btn block" href="#checklist">
-          {resume ? copy.landing.resume : copy.landing.start}
-        </a>
-        <p class="foot" style="text-align:center">{copy.disclaimer}</p>
-      </div>
+      <p class="foot" style="padding-bottom:24px">{copy.disclaimer}</p>
     </div>
   );
 }

@@ -113,6 +113,12 @@ button:disabled { cursor: default; }
   font-family: var(--cond); font-weight: 700; font-size: 18px; line-height: 1.2;
 }
 .meta { margin-top: 2px; font-size: 13px; color: var(--muted); }
+.partial {
+  display: inline-flex; align-items: center; min-height: 32px; margin-top: 6px; padding: 0 10px;
+  border: 1px dashed var(--muted); background: transparent; color: var(--muted);
+  font-family: var(--cond); font-weight: 600; font-size: 13px;
+}
+.partial.on { border: 1px solid var(--ink); background: var(--ink); color: var(--paper); }
 .reason { margin: 6px 0 2px; font-size: 14px; line-height: 1.45; display: none; }
 .row.open .reason { display: block; }
 @media (min-width: 900px) {
