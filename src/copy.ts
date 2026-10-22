@@ -71,6 +71,7 @@ export const copy = {
     ready: 'Ready for Dec 18',
     officialList: "Marvel's official list",
     seenLabel: 'Seen',
+    worthSummary: (seen: number, total: number) => `${total} ${total === 1 ? 'title' : 'titles'} · ${seen} seen`,
     started: 'Partly watched',
     makeOwn: 'Make your own plan',
     makeOwnNote: "Yours will differ. It's based on what you've seen. Two minutes, no sign-up.",

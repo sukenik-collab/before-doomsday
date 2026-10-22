@@ -5,11 +5,9 @@ import { copy } from '../copy';
 import { track } from '../analytics';
 import { emptyPlan } from '../state';
 import type { Ctx } from './App';
-import { catalog } from '../data';
+import { catalog, byId } from '../data';
 import { runtime, shareOrCopy, listReason } from './bits';
 import { Masthead } from './Masthead';
-
-const byId = new Map(catalog.items.map((i) => [i.id, i]));
 
 export function sharePlan(ctx: Ctx, mustCount: number, mustMin: number) {
   const { plan } = ctx;

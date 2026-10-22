@@ -16,14 +16,26 @@ describe('catalog', () => {
 });
 
 describe('buildPlan', () => {
-  it('nothing seen: 11 must-watch, Far From Home pulled in for No Way Home', () => {
+  it('nothing seen: 10 must-watch, Far From Home stays skippable', () => {
     const p = buildPlan(catalog, {}, TODAY);
-    expect(p.mustWatch.entries).toHaveLength(11);
-    expect(p.mustWatch.entries[0]).toMatchObject({ id: 'far-from-home', pulledFor: 'no-way-home' });
-    expect(ids(p.mustWatch).indexOf('far-from-home')).toBeLessThan(ids(p.mustWatch).indexOf('no-way-home'));
+    expect(p.mustWatch.entries).toHaveLength(10);
+    expect(ids(p.mustWatch)).not.toContain('far-from-home');
+    expect(ids(p.skippable)).toContain('far-from-home');
     expect(ids(p.mustWatch).indexOf('loki-s1')).toBeLessThan(ids(p.mustWatch).indexOf('loki-s2'));
     expect(p.worthIt.entries).toHaveLength(5);
     expect(p.ready).toBe(false);
+  });
+
+  // The live catalog has no cross-bucket prerequisites right now, so pull-in is tested on a copy that does.
+  const withPull: Catalog = {
+    ...catalog,
+    items: catalog.items.map((i) => (i.id === 'no-way-home' ? { ...i, dependsOn: ['far-from-home'] } : i)),
+  };
+
+  it('pulls an unseen prerequisite up into its dependent\'s bucket, in order', () => {
+    const p = buildPlan(withPull, {}, TODAY);
+    expect(p.mustWatch.entries[0]).toMatchObject({ id: 'far-from-home', pulledFor: 'no-way-home' });
+    expect(ids(p.mustWatch).indexOf('far-from-home')).toBeLessThan(ids(p.mustWatch).indexOf('no-way-home'));
   });
 
   it('everything seen: ready, empty buckets, only always-on refreshers', () => {
@@ -39,7 +51,7 @@ describe('buildPlan', () => {
   });
 
   it('seen prerequisite is not pulled in', () => {
-    const p = buildPlan(catalog, { 'far-from-home': 2 }, TODAY);
+    const p = buildPlan(withPull, { 'far-from-home': 2 }, TODAY);
     expect(ids(p.mustWatch)).not.toContain('far-from-home');
     expect(ids(p.skippable)).not.toContain('far-from-home');
   });

@@ -1,5 +1,5 @@
-import { useMemo } from 'preact/hooks';
-import { buildPlan, hours } from '../engine/plan';
+import { useMemo, useState } from 'preact/hooks';
+import { buildPlan, hours, type PlanEntry, type Statuses } from '../engine/plan';
 import type { SharedState } from '../engine/share';
 import { copy } from '../copy';
 import { track } from '../analytics';
@@ -9,12 +9,19 @@ import { runtime, listReason } from './bits';
 
 export function SharedPlan(props: { ctx: Ctx; shared: SharedState; hasOwn: boolean; onMakeOwn: () => void }) {
   const { shared, ctx } = props;
-  // The full must-watch list (nothing seen), so the friend sees everything, plus where the sender stands.
+  const [showWorth, setShowWorth] = useState(false);
+  // The full lists (nothing seen), so the friend sees everything, with the sender's progress on top.
   const full = useMemo(() => buildPlan(catalog, {}, ctx.today), [ctx.today]);
-  const theirs = useMemo(() => buildPlan(catalog, shared.statuses, ctx.today), [shared, ctx.today]);
   const must = full.mustWatch.entries;
-  const done = must.filter((e) => shared.statuses[e.id] === 2).length;
+  const worth = full.worthIt.entries;
   const s = copy.shared;
+
+  // Progress comes from the rows shown, so the summary line always matches the list.
+  const left = must.filter((e) => shared.statuses[e.id] !== 2);
+  const done = must.length - left.length;
+  const ready = left.every((e) => e.upcoming);
+  const leftMin = left.filter((e) => !e.upcoming).reduce((m, e) => m + byId.get(e.id)!.runtimeMin, 0);
+  const worthSeen = worth.filter((e) => shared.statuses[e.id] === 2).length;
 
   const makeOwn = () => {
     track('shared-to-own');
@@ -32,7 +39,7 @@ export function SharedPlan(props: { ctx: Ctx; shared: SharedState; hasOwn: boole
       <p style="margin:12px 0 0;font-size:16px;line-height:1.45">{s.explainer}</p>
       <div class="shared-progress">
         <span class="cond big">{s.progress(done, must.length)}</span>
-        <span class="cond">{theirs.ready ? s.ready : s.toGo(hours(theirs.mustWatch.minutes))}</span>
+        <span class="cond">{ready ? s.ready : s.toGo(hours(leftMin))}</span>
       </div>
       <button class="btn block" style="margin-top:14px" onClick={makeOwn}>{s.makeOwn}</button>
       <div class="muted" style="margin-top:6px;font-size:13px;text-align:center">{s.makeOwnNote}</div>
@@ -42,45 +49,20 @@ export function SharedPlan(props: { ctx: Ctx; shared: SharedState; hasOwn: boole
           <h2>{copy.plan.must}</h2>
           <span class="muted" style="font-size:13px;font-style:italic">{s.officialList}</span>
         </div>
-        {must.map((e, i) => {
-          const it = byId.get(e.id)!;
-          const st = shared.statuses[e.id];
-          return (
-            <div key={e.id} class={`srow${st === 2 ? ' done' : ''}`}>
-              <span class="cond n">
-                {st === 2 ? <span aria-label={s.seenLabel}>✓</span> : i + 1}
-              </span>
-              <div style="min-width:0">
-                <div class="t">{it.title}</div>
-                {st !== 2 && (
-                  <>
-                    {st === 1 && <span class="tag tag-dark" style="margin-top:4px">{s.started}</span>}
-                    <p>{it.noReason ? copy.worthWatching : listReason(it.reason)}</p>
-                  </>
-                )}
-              </div>
-              <span class="cond time">{runtime(it)}</span>
-            </div>
-          );
-        })}
+        {must.map((e, i) => (
+          <SharedRow key={e.id} e={e} n={i + 1} statuses={shared.statuses} />
+        ))}
       </section>
 
-      {theirs.worthIt.entries.length > 0 && (
+      {worth.length > 0 && (
         <section aria-label={copy.plan.worth}>
-          <div class="sec-head"><h2 style="font-size:24px">{copy.plan.worth}</h2></div>
-          {theirs.worthIt.entries.map((e) => {
-            const it = byId.get(e.id)!;
-            return (
-              <div key={e.id} class="srow">
-                <span />
-                <div style="min-width:0">
-                  <div class="t">{it.title}</div>
-                  <p>{it.noReason ? copy.worthWatching : listReason(it.reason)}</p>
-                </div>
-                <span class="cond time">{runtime(it)}</span>
-              </div>
-            );
-          })}
+          <button class="collapse" style="margin-top:20px" aria-expanded={showWorth} onClick={() => setShowWorth(!showWorth)}>
+            <span class="g">{copy.plan.worth}</span>
+            <span class="muted" style="font-size:13px">
+              {s.worthSummary(worthSeen, worth.length)} {showWorth ? '▾' : '▸'}
+            </span>
+          </button>
+          {showWorth && worth.map((e) => <SharedRow key={e.id} e={e} statuses={shared.statuses} />)}
         </section>
       )}
 
@@ -93,6 +75,38 @@ export function SharedPlan(props: { ctx: Ctx; shared: SharedState; hasOwn: boole
         )}
         <p class="foot" style="text-align:center">{copy.disclaimer}</p>
       </div>
+    </div>
+  );
+}
+
+/** One title: greyed with ✓ if the sender has seen it, otherwise its spoiler-free reason. */
+function SharedRow({ e, n, statuses }: { e: PlanEntry; n?: number; statuses: Statuses }) {
+  const it = byId.get(e.id)!;
+  const st = statuses[e.id];
+  const s = copy.shared;
+  return (
+    <div class={`srow${st === 2 ? ' done' : ''}`}>
+      <span class="cond n">
+        {st === 2 ? (
+          <>
+            <span aria-hidden="true">✓</span>
+            <span class="sr-only">{s.seenLabel}</span>
+          </>
+        ) : (
+          n
+        )}
+      </span>
+      <div style="min-width:0">
+        <div class="t">{it.title}</div>
+        {st !== 2 && (
+          <>
+            {e.pulledFor && <div class="note">{copy.plan.watchFirst(byId.get(e.pulledFor)!.title)}</div>}
+            {st === 1 && <span class="tag tag-dark" style="margin-top:4px">{s.started}</span>}
+            <p>{it.noReason ? copy.worthWatching : listReason(it.reason)}</p>
+          </>
+        )}
+      </div>
+      <span class="cond time">{runtime(it)}</span>
     </div>
   );
 }
