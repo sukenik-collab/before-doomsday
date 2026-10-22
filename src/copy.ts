@@ -1,7 +1,7 @@
 // Every UI string lives here (product spec: "Copy and microcopy").
 export const copy = {
   siteName: 'Before Doomsday',
-  kicker: 'Catch-up listings',
+  kicker: 'Unofficial fan guide · Spoiler-free',
   disclaimer: 'Unofficial fan guide. Not affiliated with Marvel or Disney.',
   landing: {
     headline: 'You stopped at Endgame. Fair.',
