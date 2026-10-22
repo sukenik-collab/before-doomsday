@@ -56,8 +56,11 @@ export function StatusIcon({ s }: { s: Status }) {
 
 export function ShareIcon() {
   return (
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-      <path d="M12 3v12M7 8l5-5 5 5M5 13v7h14v-7" />
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+      <circle cx="18" cy="5" r="2.6" />
+      <circle cx="6" cy="12" r="2.6" />
+      <circle cx="18" cy="19" r="2.6" />
+      <path d="M8.3 10.8l7.4-4.4M8.3 13.2l7.4 4.4" />
     </svg>
   );
 }
