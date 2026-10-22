@@ -16,13 +16,13 @@ describe('catalog', () => {
 });
 
 describe('buildPlan', () => {
-  it('nothing seen: 10 must-watch, Far From Home stays skippable', () => {
+  it('nothing seen: 10 must-watch, Far From Home is worth it', () => {
     const p = buildPlan(catalog, {}, TODAY);
     expect(p.mustWatch.entries).toHaveLength(10);
     expect(ids(p.mustWatch)).not.toContain('far-from-home');
-    expect(ids(p.skippable)).toContain('far-from-home');
+    expect(ids(p.worthIt)).toContain('far-from-home');
     expect(ids(p.mustWatch).indexOf('loki-s1')).toBeLessThan(ids(p.mustWatch).indexOf('loki-s2'));
-    expect(p.worthIt.entries).toHaveLength(5);
+    expect(p.worthIt.entries).toHaveLength(6);
     expect(p.ready).toBe(false);
   });
 
