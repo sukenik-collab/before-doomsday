@@ -5,11 +5,9 @@ import { copy } from '../copy';
 import { track } from '../analytics';
 import { emptyPlan } from '../state';
 import type { Ctx } from './App';
-import { catalog } from '../data';
-import { runtime, shareOrCopy } from './bits';
+import { catalog, byId } from '../data';
+import { runtime, shareOrCopy, listReason } from './bits';
 import { Masthead } from './Masthead';
-
-const byId = new Map(catalog.items.map((i) => [i.id, i]));
 
 export function sharePlan(ctx: Ctx, mustCount: number, mustMin: number) {
   const { plan } = ctx;
@@ -172,7 +170,7 @@ function BucketList({ b, numbered, onWatched }: { b: Bucket; numbered?: boolean;
               {e.finish && <span class="tag tag-dark" style="margin-bottom:4px">{copy.plan.finish}</span>}
               <div class="t">{it.title}</div>
               {e.pulledFor && <div class="note">{copy.plan.watchFirst(byId.get(e.pulledFor)!.title)}</div>}
-              <p>{it.noReason ? copy.worthWatching : it.reason}</p>
+              <p>{it.noReason ? copy.worthWatching : listReason(it.reason)}</p>
             </div>
             <div class="time">
               {e.finish ? `${copy.plan.upTo} ` : ''}
@@ -203,7 +201,7 @@ function MiniRow({ e, onWatched }: { e: PlanEntry; onWatched: (id: string) => vo
         <span>{e.finish ? `${copy.plan.finish}: ` : ''}{it.title}</span>
         <span style="font-weight:600;font-size:15px;white-space:nowrap">{runtime(it)}</span>
       </div>
-      <p>{it.noReason ? copy.worthWatching : it.reason}</p>
+      <p>{it.noReason ? copy.worthWatching : listReason(it.reason)}</p>
       {!e.upcoming && (
         <button class="btn-outline" style="min-height:36px;margin-top:8px" onClick={() => onWatched(e.id)} aria-label={`${copy.plan.watched}: ${it.title}`}>
           {copy.plan.watched}

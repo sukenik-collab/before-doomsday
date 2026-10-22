@@ -225,3 +225,18 @@ button:disabled { cursor: default; }
 }
 @media (min-width: 900px) { .toast { bottom: 24px; } }
 .toast button { min-height: 36px; border: 0; background: transparent; color: #fff; text-decoration: underline; font-family: var(--cond); font-weight: 700; font-size: 15px; text-transform: uppercase; }
+
+/* Shared plan */
+.shared-progress {
+  display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap;
+  margin-top: 14px; padding: 10px 0; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink);
+  font-weight: 600; font-size: 15px;
+}
+.shared-progress .big { font-weight: 700; font-size: 22px; }
+.srow { display: grid; grid-template-columns: 28px minmax(0, 1fr) auto; gap: 8px; padding: 10px 0; border-bottom: 1px solid var(--rule); }
+.srow .n { font-weight: 700; font-size: 17px; }
+.srow .t { font-family: var(--cond); font-weight: 700; font-size: 17px; line-height: 1.2; }
+.srow .note { margin-top: 4px; font-size: 13px; font-style: italic; color: var(--muted); }
+.srow p { margin: 3px 0 0; font-size: 14px; line-height: 1.45; }
+.srow .time { font-weight: 600; font-size: 14px; white-space: nowrap; }
+.srow.done .t, .srow.done .time, .srow.done .n { color: #6B655C; font-weight: 600; }

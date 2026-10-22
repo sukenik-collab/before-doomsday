@@ -9,7 +9,7 @@ Stopped watching Marvel after *Avengers: Endgame*? Tick what you've seen since, 
 ## How it works
 
 - `data/catalog.json` is the only content source: 52 post-Endgame titles plus pre-Endgame refreshers, each with a priority, runtime, a one-line spoiler-free reason and sources.
-- **Must-watch** follows Marvel's official pre-Doomsday Disney+ list, with prerequisites pulled in (e.g. *Far From Home* before *No Way Home*). **Worth it** develops characters Marvel announced for Doomsday. Everything else is **Skippable**. Rumors never change a priority.
+- **Must-watch** follows Marvel's official pre-Doomsday Disney+ list, with any unseen prerequisites pulled in. **Worth it** develops characters Marvel announced for Doomsday. Everything else is **Skippable**. Rumors never change a priority.
 - The plan is a pure function of the catalog, your checklist and today's date (`src/engine/plan.ts`). No backend, no accounts, no AI calls.
 - Progress stays in your browser. A shared plan is encoded in the link's `#hash`, which never reaches a server.
 
