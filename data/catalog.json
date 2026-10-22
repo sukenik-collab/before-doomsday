@@ -1,0 +1,1361 @@
+{
+ "version": "2026-10-22",
+ "targetDate": "2026-12-18",
+ "items": [
+  {
+   "slot": 0,
+   "id": "far-from-home",
+   "title": "Spider-Man: Far From Home",
+   "year": 2019,
+   "releaseDate": "2019-07-02",
+   "format": "movie",
+   "group": "phase3",
+   "priority": "optional",
+   "runtimeMin": 129,
+   "narrativeOrder": 100,
+   "reason": "Peter Parker's first adventure after Endgame. No Way Home picks up right where it ends.",
+   "sources": [
+    "https://www.themoviedb.org"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 1,
+   "id": "wandavision",
+   "title": "WandaVision",
+   "year": 2021,
+   "releaseDate": "2021-01-15",
+   "format": "season",
+   "seriesId": "wandavision",
+   "group": "phase4",
+   "priority": "recommended",
+   "runtimeMin": 350,
+   "narrativeOrder": 140,
+   "reason": "Wanda's story after Endgame. It shapes where she is going into Multiverse of Madness.",
+   "runtimeApprox": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe:_Phase_Four"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 2,
+   "id": "falcon-winter-soldier",
+   "title": "The Falcon and the Winter Soldier",
+   "year": 2021,
+   "releaseDate": "2021-03-19",
+   "format": "season",
+   "seriesId": "falcon-winter-soldier",
+   "group": "phase4",
+   "priority": "recommended",
+   "runtimeMin": 300,
+   "narrativeOrder": 180,
+   "reason": "Sam and Bucky deal with the legacy of Captain America's shield after Endgame. Sets up Brave New World.",
+   "runtimeApprox": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe:_Phase_Four",
+    "https://thewaltdisneycompany.com/news/marvel-studios-avengers-doomsday-cast/"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 3,
+   "id": "loki-s1",
+   "title": "Loki — Season 1",
+   "year": 2021,
+   "releaseDate": "2021-06-09",
+   "format": "season",
+   "seriesId": "loki",
+   "group": "phase4",
+   "priority": "essential",
+   "runtimeMin": 300,
+   "narrativeOrder": 120,
+   "reason": "Follows the Loki who escaped with the Tesseract in Endgame. On Marvel's official pre-Doomsday list.",
+   "runtimeApprox": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe:_Phase_Four",
+    "https://www.looper.com/2241678/marvel-official-avengers-doomsday-watchlist/"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 4,
+   "id": "black-widow",
+   "title": "Black Widow",
+   "year": 2021,
+   "releaseDate": "2021-07-09",
+   "format": "movie",
+   "group": "phase4",
+   "priority": "recommended",
+   "runtimeMin": 134,
+   "narrativeOrder": 110,
+   "reason": "Natasha's past, and the debut of characters who return in Thunderbolts*.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe:_Phase_Four",
+    "https://thewaltdisneycompany.com/news/marvel-studios-avengers-doomsday-cast/"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 5,
+   "id": "what-if-s1",
+   "title": "What If...? — Season 1",
+   "year": 2021,
+   "releaseDate": "2021-08-11",
+   "format": "season",
+   "seriesId": "what-if",
+   "group": "phase4",
+   "priority": "optional",
+   "runtimeMin": 290,
+   "narrativeOrder": 400,
+   "reason": "Animated anthology of alternate takes on familiar MCU moments.",
+   "runtimeApprox": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe:_Phase_Four"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 6,
+   "id": "shang-chi",
+   "title": "Shang-Chi and the Legend of the Ten Rings",
+   "year": 2021,
+   "releaseDate": "2021-09-03",
+   "format": "movie",
+   "group": "phase4",
+   "priority": "essential",
+   "runtimeMin": 132,
+   "narrativeOrder": 200,
+   "reason": "Introduces Shang-Chi, a martial artist pulled back into his father's world. On Marvel's official list.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe:_Phase_Four",
+    "https://thedirect.com/article/marvel-official-avengers-doomsday-watch-list-disney-plus"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 7,
+   "id": "eternals",
+   "title": "Eternals",
+   "year": 2021,
+   "releaseDate": "2021-11-05",
+   "format": "movie",
+   "group": "phase4",
+   "priority": "optional",
+   "runtimeMin": 156,
+   "narrativeOrder": 410,
+   "reason": "A standalone cosmic epic introducing an ancient team of heroes.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe:_Phase_Four"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 8,
+   "id": "hawkeye",
+   "title": "Hawkeye",
+   "year": 2021,
+   "releaseDate": "2021-11-24",
+   "format": "season",
+   "seriesId": "hawkeye",
+   "group": "phase4",
+   "priority": "optional",
+   "runtimeMin": 330,
+   "narrativeOrder": 420,
+   "reason": "Clint Barton's holiday-season mission alongside a new archer, Kate Bishop.",
+   "runtimeApprox": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe:_Phase_Four"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 9,
+   "id": "no-way-home",
+   "title": "Spider-Man: No Way Home",
+   "year": 2021,
+   "releaseDate": "2021-12-17",
+   "format": "movie",
+   "group": "phase4",
+   "priority": "essential",
+   "runtimeMin": 148,
+   "narrativeOrder": 105,
+   "reason": "Peter asks Doctor Strange for help, and it goes badly wrong. On Marvel's official list.",
+   "dependsOn": [
+    "far-from-home"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe:_Phase_Four",
+    "https://thedirect.com/article/marvel-official-avengers-doomsday-watch-list-disney-plus"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 10,
+   "id": "moon-knight",
+   "title": "Moon Knight",
+   "year": 2022,
+   "releaseDate": "2022-03-30",
+   "format": "season",
+   "seriesId": "moon-knight",
+   "group": "phase4",
+   "priority": "optional",
+   "runtimeMin": 300,
+   "narrativeOrder": 430,
+   "reason": "A standalone mystery about a man sharing his life with another identity.",
+   "runtimeApprox": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe:_Phase_Four"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 11,
+   "id": "multiverse-of-madness",
+   "title": "Doctor Strange in the Multiverse of Madness",
+   "year": 2022,
+   "releaseDate": "2022-05-06",
+   "format": "movie",
+   "group": "phase4",
+   "priority": "essential",
+   "runtimeMin": 126,
+   "narrativeOrder": 210,
+   "reason": "Doctor Strange confronts the dangers of the multiverse. On Marvel's official list.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe:_Phase_Four",
+    "https://thedirect.com/article/marvel-official-avengers-doomsday-watch-list-disney-plus"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 12,
+   "id": "ms-marvel",
+   "title": "Ms. Marvel",
+   "year": 2022,
+   "releaseDate": "2022-06-08",
+   "format": "season",
+   "seriesId": "ms-marvel",
+   "group": "phase4",
+   "priority": "optional",
+   "runtimeMin": 290,
+   "narrativeOrder": 440,
+   "reason": "A teenage Avengers superfan from Jersey City gets powers of her own.",
+   "runtimeApprox": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe:_Phase_Four"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 13,
+   "id": "love-and-thunder",
+   "title": "Thor: Love and Thunder",
+   "year": 2022,
+   "releaseDate": "2022-07-08",
+   "format": "movie",
+   "group": "phase4",
+   "priority": "recommended",
+   "runtimeMin": 119,
+   "narrativeOrder": 230,
+   "reason": "Thor's next chapter after Endgame.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe:_Phase_Four",
+    "https://thewaltdisneycompany.com/news/marvel-studios-avengers-doomsday-cast/"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 14,
+   "id": "i-am-groot-s1",
+   "title": "I Am Groot — Season 1",
+   "year": 2022,
+   "releaseDate": "2022-08-10",
+   "format": "short",
+   "seriesId": "i-am-groot",
+   "group": "phase4",
+   "priority": "optional",
+   "runtimeMin": 20,
+   "narrativeOrder": 450,
+   "reason": "Five tiny animated shorts starring little Groot.",
+   "runtimeApprox": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe:_Phase_Four"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 15,
+   "id": "she-hulk",
+   "title": "She-Hulk: Attorney at Law",
+   "year": 2022,
+   "releaseDate": "2022-08-18",
+   "format": "season",
+   "seriesId": "she-hulk",
+   "group": "phase4",
+   "priority": "optional",
+   "runtimeMin": 300,
+   "narrativeOrder": 460,
+   "reason": "Bruce Banner's cousin juggles a law career and Hulk powers. A comedy.",
+   "runtimeApprox": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe:_Phase_Four"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 16,
+   "id": "werewolf-by-night",
+   "title": "Werewolf by Night",
+   "year": 2022,
+   "releaseDate": "2022-10-07",
+   "format": "special",
+   "group": "phase4",
+   "priority": "optional",
+   "runtimeMin": 53,
+   "narrativeOrder": 470,
+   "reason": "A standalone black-and-white monster-movie special.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe:_Phase_Four"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 17,
+   "id": "wakanda-forever",
+   "title": "Black Panther: Wakanda Forever",
+   "year": 2022,
+   "releaseDate": "2022-11-11",
+   "format": "movie",
+   "group": "phase4",
+   "priority": "essential",
+   "runtimeMin": 162,
+   "narrativeOrder": 240,
+   "reason": "Wakanda faces a rival kingdom hidden beneath the sea. On Marvel's official list.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe:_Phase_Four",
+    "https://thedirect.com/article/marvel-official-avengers-doomsday-watch-list-disney-plus"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 18,
+   "id": "guardians-holiday-special",
+   "title": "The Guardians of the Galaxy Holiday Special",
+   "year": 2022,
+   "releaseDate": "2022-11-25",
+   "format": "special",
+   "group": "phase4",
+   "priority": "optional",
+   "runtimeMin": 44,
+   "narrativeOrder": 480,
+   "reason": "A short, silly festive special with the Guardians.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe:_Phase_Four"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 19,
+   "id": "quantumania",
+   "title": "Ant-Man and the Wasp: Quantumania",
+   "year": 2023,
+   "releaseDate": "2023-02-17",
+   "format": "movie",
+   "group": "phase5",
+   "priority": "recommended",
+   "runtimeMin": 125,
+   "narrativeOrder": 250,
+   "reason": "Scott Lang and his family get pulled into the Quantum Realm.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe:_Phase_Five",
+    "https://thewaltdisneycompany.com/news/marvel-studios-avengers-doomsday-cast/"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 20,
+   "id": "guardians-3",
+   "title": "Guardians of the Galaxy Vol. 3",
+   "year": 2023,
+   "releaseDate": "2023-05-05",
+   "format": "movie",
+   "group": "phase5",
+   "priority": "optional",
+   "runtimeMin": 150,
+   "narrativeOrder": 490,
+   "reason": "Closes out the Guardians trilogy. Not on Marvel's official pre-Doomsday list.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe:_Phase_Five"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 21,
+   "id": "secret-invasion",
+   "title": "Secret Invasion",
+   "year": 2023,
+   "releaseDate": "2023-06-21",
+   "format": "season",
+   "seriesId": "secret-invasion",
+   "group": "phase5",
+   "priority": "optional",
+   "runtimeMin": 280,
+   "narrativeOrder": 500,
+   "reason": "Nick Fury faces a hidden Skrull conspiracy on Earth.",
+   "runtimeApprox": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe:_Phase_Five"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 22,
+   "id": "i-am-groot-s2",
+   "title": "I Am Groot — Season 2",
+   "year": 2023,
+   "releaseDate": "2023-09-06",
+   "format": "short",
+   "seriesId": "i-am-groot",
+   "group": "phase5",
+   "priority": "optional",
+   "runtimeMin": 25,
+   "narrativeOrder": 510,
+   "reason": "Five more tiny shorts with little Groot.",
+   "runtimeApprox": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe:_Phase_Five"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 23,
+   "id": "loki-s2",
+   "title": "Loki — Season 2",
+   "year": 2023,
+   "releaseDate": "2023-10-05",
+   "format": "season",
+   "seriesId": "loki",
+   "group": "phase5",
+   "priority": "essential",
+   "runtimeMin": 300,
+   "narrativeOrder": 215,
+   "reason": "Continues directly from season 1. Both seasons are on Marvel's official list.",
+   "dependsOn": [
+    "loki-s1"
+   ],
+   "runtimeApprox": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe:_Phase_Five",
+    "https://www.looper.com/2241678/marvel-official-avengers-doomsday-watchlist/"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 24,
+   "id": "the-marvels",
+   "title": "The Marvels",
+   "year": 2023,
+   "releaseDate": "2023-11-10",
+   "format": "movie",
+   "group": "phase5",
+   "priority": "optional",
+   "runtimeMin": 105,
+   "narrativeOrder": 520,
+   "reason": "Carol Danvers teams up with Monica Rambeau and Ms. Marvel.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe:_Phase_Five"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 25,
+   "id": "what-if-s2",
+   "title": "What If...? — Season 2",
+   "year": 2023,
+   "releaseDate": "2023-12-22",
+   "format": "season",
+   "seriesId": "what-if",
+   "group": "phase5",
+   "priority": "optional",
+   "runtimeMin": 280,
+   "narrativeOrder": 530,
+   "reason": "More animated alternate-reality stories.",
+   "dependsOn": [
+    "what-if-s1"
+   ],
+   "runtimeApprox": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe:_Phase_Five"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 26,
+   "id": "echo",
+   "title": "Echo",
+   "year": 2024,
+   "releaseDate": "2024-01-09",
+   "format": "season",
+   "seriesId": "echo",
+   "group": "phase5",
+   "priority": "optional",
+   "runtimeMin": 230,
+   "narrativeOrder": 540,
+   "reason": "A street-level crime story spun out of Hawkeye.",
+   "dependsOn": [
+    "hawkeye"
+   ],
+   "runtimeApprox": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe:_Phase_Five"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 27,
+   "id": "x-men-97-s1",
+   "title": "X-Men '97 — Season 1",
+   "year": 2024,
+   "releaseDate": "2024-03-20",
+   "format": "season",
+   "seriesId": "x-men-97",
+   "group": "phase5",
+   "priority": "optional",
+   "runtimeMin": 300,
+   "narrativeOrder": 550,
+   "reason": "Picks up the classic 1990s X-Men cartoon. Its own continuity.",
+   "runtimeApprox": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe:_Phase_Five"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 28,
+   "id": "deadpool-wolverine",
+   "title": "Deadpool & Wolverine",
+   "year": 2024,
+   "releaseDate": "2024-07-26",
+   "format": "movie",
+   "group": "phase5",
+   "priority": "essential",
+   "runtimeMin": 128,
+   "narrativeOrder": 260,
+   "reason": "Deadpool joins the MCU alongside Wolverine, bridging Fox's X-Men films and the MCU. On Marvel's official list.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe:_Phase_Five",
+    "https://thedirect.com/article/marvel-official-avengers-doomsday-watch-list-disney-plus"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 29,
+   "id": "agatha-all-along",
+   "title": "Agatha All Along",
+   "year": 2024,
+   "releaseDate": "2024-09-18",
+   "format": "season",
+   "seriesId": "agatha",
+   "group": "phase5",
+   "priority": "optional",
+   "runtimeMin": 340,
+   "narrativeOrder": 560,
+   "reason": "Spins off from WandaVision.",
+   "dependsOn": [
+    "wandavision"
+   ],
+   "runtimeApprox": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe:_Phase_Five"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 30,
+   "id": "what-if-s3",
+   "title": "What If...? — Season 3",
+   "year": 2024,
+   "releaseDate": "2024-12-22",
+   "format": "season",
+   "seriesId": "what-if",
+   "group": "phase5",
+   "priority": "optional",
+   "runtimeMin": 240,
+   "narrativeOrder": 570,
+   "reason": "The final season of the animated anthology.",
+   "dependsOn": [
+    "what-if-s2"
+   ],
+   "runtimeApprox": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe:_Phase_Five"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 31,
+   "id": "friendly-spider-man-s1",
+   "title": "Your Friendly Neighborhood Spider-Man — Season 1",
+   "year": 2025,
+   "releaseDate": "2025-01-29",
+   "format": "season",
+   "seriesId": "friendly-spider-man",
+   "group": "phase5",
+   "priority": "optional",
+   "runtimeMin": 250,
+   "narrativeOrder": 580,
+   "reason": "An animated take on Peter Parker's early days as Spider-Man. Its own continuity.",
+   "runtimeApprox": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe:_Phase_Five"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 32,
+   "id": "brave-new-world",
+   "title": "Captain America: Brave New World",
+   "year": 2025,
+   "releaseDate": "2025-02-14",
+   "format": "movie",
+   "group": "phase5",
+   "priority": "essential",
+   "runtimeMin": 119,
+   "narrativeOrder": 270,
+   "reason": "Sam Wilson's first film as the new Captain America. On Marvel's official list.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe:_Phase_Five",
+    "https://thedirect.com/article/marvel-official-avengers-doomsday-watch-list-disney-plus"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 33,
+   "id": "daredevil-born-again-s1",
+   "title": "Daredevil: Born Again — Season 1",
+   "year": 2025,
+   "releaseDate": "2025-03-04",
+   "format": "season",
+   "seriesId": "daredevil-born-again",
+   "group": "phase5",
+   "priority": "optional",
+   "runtimeMin": 450,
+   "narrativeOrder": 590,
+   "reason": "Matt Murdock returns, continuing Netflix's Daredevil series.",
+   "runtimeApprox": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe:_Phase_Five"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 34,
+   "id": "thunderbolts",
+   "title": "Thunderbolts*",
+   "year": 2025,
+   "releaseDate": "2025-05-02",
+   "format": "movie",
+   "group": "phase5",
+   "priority": "essential",
+   "runtimeMin": 127,
+   "narrativeOrder": 280,
+   "reason": "A team of antiheroes is forced to work together. On Marvel's official list.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe:_Phase_Five",
+    "https://thedirect.com/article/marvel-official-avengers-doomsday-watch-list-disney-plus"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 35,
+   "id": "ironheart",
+   "title": "Ironheart",
+   "year": 2025,
+   "releaseDate": "2025-06-24",
+   "format": "season",
+   "seriesId": "ironheart",
+   "group": "phase5",
+   "priority": "optional",
+   "runtimeMin": 270,
+   "narrativeOrder": 600,
+   "reason": "Riri Williams, a young genius inventor, gets her own series.",
+   "runtimeApprox": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe:_Phase_Five"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 36,
+   "id": "fantastic-four",
+   "title": "The Fantastic Four: First Steps",
+   "year": 2025,
+   "releaseDate": "2025-07-25",
+   "format": "movie",
+   "group": "phase6",
+   "priority": "essential",
+   "runtimeMin": 115,
+   "narrativeOrder": 290,
+   "reason": "Introduces Marvel's First Family in their own retro-futuristic world. On Marvel's official list.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe:_Phase_Six",
+    "https://thedirect.com/article/marvel-official-avengers-doomsday-watch-list-disney-plus"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 37,
+   "id": "eyes-of-wakanda",
+   "title": "Eyes of Wakanda",
+   "year": 2025,
+   "releaseDate": "2025-08-01",
+   "format": "season",
+   "seriesId": "eyes-of-wakanda",
+   "group": "phase6",
+   "priority": "optional",
+   "runtimeMin": 120,
+   "narrativeOrder": 610,
+   "reason": "Animated stories of Wakandan warriors across history.",
+   "runtimeApprox": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe:_Phase_Six"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 38,
+   "id": "marvel-zombies",
+   "title": "Marvel Zombies",
+   "year": 2025,
+   "releaseDate": "2025-09-24",
+   "format": "season",
+   "seriesId": "marvel-zombies",
+   "group": "phase6",
+   "priority": "optional",
+   "runtimeMin": 130,
+   "narrativeOrder": 620,
+   "reason": "An animated horror spin-off of What If...?",
+   "runtimeApprox": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe:_Phase_Six"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 39,
+   "id": "wonder-man",
+   "title": "Wonder Man",
+   "year": 2026,
+   "releaseDate": "2026-01-27",
+   "format": "season",
+   "seriesId": "wonder-man",
+   "group": "phase6",
+   "priority": "optional",
+   "runtimeMin": 280,
+   "narrativeOrder": 630,
+   "reason": "A Hollywood satire about an actor with superpowers.",
+   "runtimeApprox": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe:_Phase_Six"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 40,
+   "id": "daredevil-born-again-s2",
+   "title": "Daredevil: Born Again — Season 2",
+   "year": 2026,
+   "releaseDate": "2026-03-24",
+   "format": "season",
+   "seriesId": "daredevil-born-again",
+   "group": "phase6",
+   "priority": "optional",
+   "runtimeMin": 400,
+   "narrativeOrder": 640,
+   "reason": "Continues season 1.",
+   "dependsOn": [
+    "daredevil-born-again-s1"
+   ],
+   "runtimeApprox": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe:_Phase_Six"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 41,
+   "id": "punisher-one-last-kill",
+   "title": "The Punisher: One Last Kill",
+   "year": 2026,
+   "releaseDate": "2026-05-12",
+   "format": "special",
+   "group": "phase6",
+   "priority": "optional",
+   "runtimeMin": 51,
+   "narrativeOrder": 650,
+   "reason": "A Frank Castle special that runs alongside Born Again season 2.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/The_Punisher:_One_Last_Kill"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 42,
+   "id": "x-men-97-s2",
+   "title": "X-Men '97 — Season 2",
+   "year": 2026,
+   "releaseDate": "2026-07-01",
+   "format": "season",
+   "seriesId": "x-men-97",
+   "group": "phase6",
+   "priority": "optional",
+   "runtimeMin": 270,
+   "narrativeOrder": 660,
+   "reason": "Continues season 1 of the animated series.",
+   "dependsOn": [
+    "x-men-97-s1"
+   ],
+   "runtimeApprox": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/X-Men_%2797_season_2"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 43,
+   "id": "brand-new-day",
+   "title": "Spider-Man: Brand New Day",
+   "year": 2026,
+   "releaseDate": "2026-07-31",
+   "format": "movie",
+   "group": "phase6",
+   "priority": "optional",
+   "runtimeMin": 145,
+   "narrativeOrder": 300,
+   "reason": "The newest Spider-Man film. It isn't on Marvel's official pre-Doomsday list.",
+   "dependsOn": [
+    "no-way-home"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe:_Phase_Six",
+    "https://thedirect.com/article/marvel-official-avengers-doomsday-watch-list-disney-plus"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 44,
+   "id": "visionquest",
+   "title": "VisionQuest",
+   "year": 2026,
+   "releaseDate": "2026-10-13",
+   "format": "season",
+   "seriesId": "visionquest",
+   "group": "phase6",
+   "priority": "optional",
+   "runtimeMin": 400,
+   "narrativeOrder": 670,
+   "reason": "The final part of the trilogy that began with WandaVision. Airing weekly; finale November 10.",
+   "dependsOn": [
+    "wandavision"
+   ],
+   "runtimeApprox": true,
+   "finaleDate": "2026-11-10",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe:_Phase_Six",
+    "https://www.forbes.com/sites/erikkain/2026/10/13/visionquest-premiere-date-release-time-and-full-disney-episode-schedule/"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 45,
+   "id": "dark-phoenix",
+   "title": "Dark Phoenix",
+   "year": 2019,
+   "releaseDate": "2019-06-07",
+   "format": "movie",
+   "group": "nonMcu",
+   "priority": "optional",
+   "runtimeMin": 114,
+   "narrativeOrder": 700,
+   "reason": "The last film in Fox's X-Men prequel series.",
+   "sources": [
+    "https://www.themoviedb.org"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 46,
+   "id": "new-mutants",
+   "title": "The New Mutants",
+   "year": 2020,
+   "releaseDate": "2020-08-28",
+   "format": "movie",
+   "group": "nonMcu",
+   "priority": "optional",
+   "runtimeMin": 94,
+   "narrativeOrder": 710,
+   "reason": "A Fox X-Men horror spin-off.",
+   "sources": [
+    "https://www.themoviedb.org"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 47,
+   "id": "venom-carnage",
+   "title": "Venom: Let There Be Carnage",
+   "year": 2021,
+   "releaseDate": "2021-10-01",
+   "format": "movie",
+   "group": "nonMcu",
+   "priority": "optional",
+   "runtimeMin": 97,
+   "narrativeOrder": 720,
+   "reason": "Part of Sony's separate Spider-Man-villain films.",
+   "sources": [
+    "https://www.themoviedb.org"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 48,
+   "id": "morbius",
+   "title": "Morbius",
+   "year": 2022,
+   "releaseDate": "2022-04-01",
+   "format": "movie",
+   "group": "nonMcu",
+   "priority": "optional",
+   "runtimeMin": 105,
+   "narrativeOrder": 730,
+   "reason": "Part of Sony's separate Spider-Man-villain films.",
+   "sources": [
+    "https://www.themoviedb.org"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 49,
+   "id": "madame-web",
+   "title": "Madame Web",
+   "year": 2024,
+   "releaseDate": "2024-02-14",
+   "format": "movie",
+   "group": "nonMcu",
+   "priority": "optional",
+   "runtimeMin": 117,
+   "narrativeOrder": 740,
+   "reason": "Part of Sony's separate Spider-Man-villain films.",
+   "sources": [
+    "https://www.themoviedb.org"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 50,
+   "id": "venom-last-dance",
+   "title": "Venom: The Last Dance",
+   "year": 2024,
+   "releaseDate": "2024-10-25",
+   "format": "movie",
+   "group": "nonMcu",
+   "priority": "optional",
+   "runtimeMin": 109,
+   "narrativeOrder": 750,
+   "reason": "Part of Sony's separate Spider-Man-villain films.",
+   "sources": [
+    "https://www.themoviedb.org"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 51,
+   "id": "kraven",
+   "title": "Kraven the Hunter",
+   "year": 2024,
+   "releaseDate": "2024-12-13",
+   "format": "movie",
+   "group": "nonMcu",
+   "priority": "optional",
+   "runtimeMin": 127,
+   "narrativeOrder": 760,
+   "reason": "Part of Sony's separate Spider-Man-villain films.",
+   "sources": [
+    "https://www.themoviedb.org"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 52,
+   "id": "ref-x-men",
+   "title": "X-Men",
+   "year": 2000,
+   "releaseDate": "2000-01-01",
+   "format": "movie",
+   "group": "refresher",
+   "priority": "optional",
+   "runtimeMin": 104,
+   "narrativeOrder": 1,
+   "reason": "Fox's first X-Men film. On Marvel's official pre-Doomsday list.",
+   "always": true,
+   "sources": [
+    "https://thedirect.com/article/marvel-official-avengers-doomsday-watch-list-disney-plus"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 53,
+   "id": "ref-x2",
+   "title": "X2",
+   "year": 2003,
+   "releaseDate": "2003-01-01",
+   "format": "movie",
+   "group": "refresher",
+   "priority": "optional",
+   "runtimeMin": 133,
+   "narrativeOrder": 2,
+   "reason": "The direct sequel. Also on the official list.",
+   "always": true,
+   "sources": [
+    "https://thedirect.com/article/marvel-official-avengers-doomsday-watch-list-disney-plus"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 54,
+   "id": "ref-first-avenger",
+   "title": "Captain America: The First Avenger",
+   "year": 2011,
+   "releaseDate": "2011-01-01",
+   "format": "movie",
+   "group": "refresher",
+   "priority": "optional",
+   "runtimeMin": 124,
+   "narrativeOrder": 3,
+   "reason": "On Marvel's official list. Worth a rewatch if Steve's origin is fuzzy.",
+   "always": true,
+   "sources": [
+    "https://thedirect.com/article/marvel-official-avengers-doomsday-watch-list-disney-plus"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 55,
+   "id": "ref-avengers",
+   "title": "The Avengers",
+   "year": 2012,
+   "releaseDate": "2012-01-01",
+   "format": "movie",
+   "group": "refresher",
+   "priority": "optional",
+   "runtimeMin": 143,
+   "narrativeOrder": 4,
+   "reason": "On Marvel's official list. The team's first assembly.",
+   "always": true,
+   "sources": [
+    "https://thedirect.com/article/marvel-official-avengers-doomsday-watch-list-disney-plus"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 56,
+   "id": "ref-infinity-war",
+   "title": "Avengers: Infinity War",
+   "year": 2018,
+   "releaseDate": "2018-01-01",
+   "format": "movie",
+   "group": "refresher",
+   "priority": "optional",
+   "runtimeMin": 149,
+   "narrativeOrder": 5,
+   "reason": "On Marvel's official list. Rewatch if the details have faded.",
+   "always": true,
+   "sources": [
+    "https://thedirect.com/article/marvel-official-avengers-doomsday-watch-list-disney-plus"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 57,
+   "id": "ref-endgame",
+   "title": "Avengers: Endgame",
+   "year": 2019,
+   "releaseDate": "2019-01-01",
+   "format": "movie",
+   "group": "refresher",
+   "priority": "optional",
+   "runtimeMin": 181,
+   "narrativeOrder": 6,
+   "reason": "On Marvel's official list. The last thing you saw, so a rewatch helps.",
+   "always": true,
+   "sources": [
+    "https://thedirect.com/article/marvel-official-avengers-doomsday-watch-list-disney-plus"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 58,
+   "id": "ref-deadpool",
+   "title": "Deadpool",
+   "year": 2016,
+   "releaseDate": "2016-01-01",
+   "format": "movie",
+   "group": "refresher",
+   "priority": "optional",
+   "runtimeMin": 108,
+   "narrativeOrder": 10,
+   "reason": "Fox's first Deadpool film.",
+   "triggers": [
+    "deadpool-wolverine"
+   ],
+   "sources": [
+    "https://www.themoviedb.org"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 59,
+   "id": "ref-deadpool-2",
+   "title": "Deadpool 2",
+   "year": 2018,
+   "releaseDate": "2018-01-01",
+   "format": "movie",
+   "group": "refresher",
+   "priority": "optional",
+   "runtimeMin": 119,
+   "narrativeOrder": 11,
+   "reason": "Deadpool's second Fox outing.",
+   "triggers": [
+    "deadpool-wolverine"
+   ],
+   "sources": [
+    "https://www.themoviedb.org"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 60,
+   "id": "ref-logan",
+   "title": "Logan",
+   "year": 2017,
+   "releaseDate": "2017-01-01",
+   "format": "movie",
+   "group": "refresher",
+   "priority": "optional",
+   "runtimeMin": 137,
+   "narrativeOrder": 12,
+   "reason": "Hugh Jackman's Wolverine send-off at Fox.",
+   "triggers": [
+    "deadpool-wolverine"
+   ],
+   "sources": [
+    "https://www.themoviedb.org"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 61,
+   "id": "ref-homecoming",
+   "title": "Spider-Man: Homecoming",
+   "year": 2017,
+   "releaseDate": "2017-01-01",
+   "format": "movie",
+   "group": "refresher",
+   "priority": "optional",
+   "runtimeMin": 133,
+   "narrativeOrder": 13,
+   "reason": "Tom Holland's first solo Spider-Man film.",
+   "triggers": [
+    "far-from-home",
+    "no-way-home"
+   ],
+   "sources": [
+    "https://www.themoviedb.org"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 62,
+   "id": "ref-doctor-strange",
+   "title": "Doctor Strange",
+   "year": 2016,
+   "releaseDate": "2016-01-01",
+   "format": "movie",
+   "group": "refresher",
+   "priority": "optional",
+   "runtimeMin": 115,
+   "narrativeOrder": 14,
+   "reason": "Strange's origin.",
+   "triggers": [
+    "multiverse-of-madness"
+   ],
+   "sources": [
+    "https://www.themoviedb.org"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 63,
+   "id": "ref-black-panther",
+   "title": "Black Panther",
+   "year": 2018,
+   "releaseDate": "2018-01-01",
+   "format": "movie",
+   "group": "refresher",
+   "priority": "optional",
+   "runtimeMin": 134,
+   "narrativeOrder": 15,
+   "reason": "Wakanda's first film.",
+   "triggers": [
+    "wakanda-forever"
+   ],
+   "sources": [
+    "https://www.themoviedb.org"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 64,
+   "id": "ref-ragnarok",
+   "title": "Thor: Ragnarok",
+   "year": 2017,
+   "releaseDate": "2017-01-01",
+   "format": "movie",
+   "group": "refresher",
+   "priority": "optional",
+   "runtimeMin": 130,
+   "narrativeOrder": 16,
+   "reason": "Thor's last solo film before Love and Thunder.",
+   "triggers": [
+    "love-and-thunder"
+   ],
+   "sources": [
+    "https://www.themoviedb.org"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 65,
+   "id": "ref-ant-man-wasp",
+   "title": "Ant-Man and the Wasp",
+   "year": 2018,
+   "releaseDate": "2018-01-01",
+   "format": "movie",
+   "group": "refresher",
+   "priority": "optional",
+   "runtimeMin": 118,
+   "narrativeOrder": 17,
+   "reason": "The Quantum Realm groundwork.",
+   "triggers": [
+    "quantumania"
+   ],
+   "sources": [
+    "https://www.themoviedb.org"
+   ],
+   "verifiedOn": "2026-10-22"
+  },
+  {
+   "slot": 66,
+   "id": "ref-winter-soldier",
+   "title": "Captain America: The Winter Soldier",
+   "year": 2014,
+   "releaseDate": "2014-01-01",
+   "format": "movie",
+   "group": "refresher",
+   "priority": "optional",
+   "runtimeMin": 136,
+   "narrativeOrder": 18,
+   "reason": "Bucky's story begins in earnest here.",
+   "triggers": [
+    "falcon-winter-soldier",
+    "brave-new-world"
+   ],
+   "sources": [
+    "https://www.themoviedb.org"
+   ],
+   "verifiedOn": "2026-10-22"
+  }
+ ],
+ "series": [
+  {
+   "id": "wandavision",
+   "title": "WandaVision"
+  },
+  {
+   "id": "falcon-winter-soldier",
+   "title": "The Falcon and the Winter Soldier"
+  },
+  {
+   "id": "loki",
+   "title": "Loki"
+  },
+  {
+   "id": "what-if",
+   "title": "What If...?"
+  },
+  {
+   "id": "hawkeye",
+   "title": "Hawkeye"
+  },
+  {
+   "id": "moon-knight",
+   "title": "Moon Knight"
+  },
+  {
+   "id": "ms-marvel",
+   "title": "Ms. Marvel"
+  },
+  {
+   "id": "i-am-groot",
+   "title": "I Am Groot"
+  },
+  {
+   "id": "she-hulk",
+   "title": "She-Hulk: Attorney at Law"
+  },
+  {
+   "id": "secret-invasion",
+   "title": "Secret Invasion"
+  },
+  {
+   "id": "echo",
+   "title": "Echo"
+  },
+  {
+   "id": "x-men-97",
+   "title": "X-Men '97"
+  },
+  {
+   "id": "agatha",
+   "title": "Agatha All Along"
+  },
+  {
+   "id": "friendly-spider-man",
+   "title": "Your Friendly Neighborhood Spider-Man"
+  },
+  {
+   "id": "daredevil-born-again",
+   "title": "Daredevil: Born Again"
+  },
+  {
+   "id": "ironheart",
+   "title": "Ironheart"
+  },
+  {
+   "id": "eyes-of-wakanda",
+   "title": "Eyes of Wakanda"
+  },
+  {
+   "id": "marvel-zombies",
+   "title": "Marvel Zombies"
+  },
+  {
+   "id": "wonder-man",
+   "title": "Wonder Man"
+  },
+  {
+   "id": "visionquest",
+   "title": "VisionQuest"
+  }
+ ]
+}

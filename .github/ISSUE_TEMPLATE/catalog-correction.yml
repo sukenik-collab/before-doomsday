@@ -1,0 +1,28 @@
+name: Catalog correction
+description: A wrong date, runtime, priority or reason in the catalog
+title: "Catalog: "
+labels: [catalog]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **No plot details, please.** No twists, deaths, cameos, post-credit scenes or leaks. Issues with spoilers get edited or locked.
+  - type: input
+    id: title
+    attributes:
+      label: Title
+      placeholder: e.g. Loki — Season 2
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What's wrong, and what should it be?
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source (official where possible)
+    validations:
+      required: true
