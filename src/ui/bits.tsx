@@ -88,3 +88,8 @@ export async function shareOrCopy(text: string, url: string, onCopied: () => voi
   onCopied();
   return true;
 }
+
+/** Reason text for lists already headed "Marvel's official list": drops the repeated suffix. */
+export function listReason(reason: string | null): string | null {
+  return reason ? reason.replace(/\s*(Both seasons are )?[Oo]n Marvel's official (pre-Doomsday )?list\.$/, '').trim() || reason : reason;
+}

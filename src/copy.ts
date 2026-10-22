@@ -63,12 +63,17 @@ export const copy = {
     titles: (n: number) => `${n} ${n === 1 ? 'title' : 'titles'}`,
   },
   shared: {
-    kicker: 'Before Doomsday · Shared plan',
-    someone: "Someone's plan",
-    readOnly: 'read-only',
-    blurb: "This list is based on what its owner has seen. Yours will be different.",
-    makeOwn: 'Make my own',
-    makeOwnNote: '2 minutes. Nothing pre-checked.',
+    intro: 'A friend shared their Doomsday catch-up',
+    someone: "A friend's plan",
+    explainer: 'If you stopped after Endgame, this works out what to watch before Avengers: Doomsday (Dec 18), and what to skip. No spoilers.',
+    progress: (done: number, total: number) => `${done} of ${total} must-watch done`,
+    toGo: (h: string) => `~${h} to go`,
+    ready: 'Ready for Dec 18',
+    officialList: "Marvel's official list",
+    seenLabel: 'Seen',
+    started: 'Partly watched',
+    makeOwn: 'Make your own plan',
+    makeOwnNote: "Yours will differ. It's based on what you've seen. Two minutes, no sign-up.",
     backToMine: 'Back to my plan',
     replaceConfirm: 'Start a fresh plan? Your current checklist on this device will be cleared.',
   },
@@ -76,5 +81,8 @@ export const copy = {
   shareSite: {
     text: 'Stopped watching Marvel after Endgame? This tells you exactly what to watch before Doomsday. No spoilers.',
   },
-  sharePlan: (n: number, h: string) => `My Doomsday catch-up: ${n} must-watch, ~${h}. Make yours →`,
+  sharePlan: (n: number, h: string) =>
+    n === 0
+      ? "I'm ready for Avengers: Doomsday. Here's my list. Make yours →"
+      : `I've got ${n} Marvel ${n === 1 ? 'title' : 'titles'} left (~${h}) before Avengers: Doomsday. Here's my list. Make yours →`,
 };
