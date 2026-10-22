@@ -18,15 +18,11 @@ const effective = new Map<string, Priority>([
 ]);
 type Filter = 'all' | 'key' | 'hideSeen';
 
-function nextStatus(it: Item, s: Status): Status {
-  if (it.format === 'season' || it.format === 'short') return ((s + 1) % 3) as Status;
-  return s === 2 ? 0 : 2;
-}
 
 export function Checklist({ ctx }: { ctx: Ctx }) {
   const { plan, today } = ctx;
   const [filter, setFilter] = useState<Filter>('all');
-  const [open, setOpen] = useState<Record<string, boolean>>({ phase4: true, phase5: true, phase6: true });
+  const [open, setOpen] = useState<Record<string, boolean>>({ phase3: true, phase4: true, phase5: true, phase6: true });
   const [expanded, setExpanded] = useState<Record<string, boolean>>({});
   const p = useMemo(() => buildPlan(catalog, plan.statuses, today), [plan.statuses, today]);
   const mustLeft = p.mustWatch.entries.filter((e) => !e.upcoming).length;
@@ -173,16 +169,18 @@ function Row(props: { it: Item; s: Status; today: string; open: boolean; onToggl
   const { it, s, today } = props;
   const upcoming = it.releaseDate > today;
   const airing = !upcoming && it.finaleDate && it.finaleDate > today;
-  const label = copy.status[s];
-  const extra = upcoming ? copy.out(shortDate(it.releaseDate)) : airing ? copy.finaleOn(shortDate(it.finaleDate!)) : s === 1 ? label : '';
+  const extra = upcoming ? copy.out(shortDate(it.releaseDate)) : airing ? copy.finaleOn(shortDate(it.finaleDate!)) : '';
+  const canPartial = it.format === 'season' && !upcoming && s !== 2;
   const reason = it.noReason ? copy.worthWatching : it.reason;
   return (
     <div class={`row${props.open ? ' open' : ''}`}>
       <button
         class="status-btn"
         disabled={upcoming}
-        aria-label={`${it.title}: ${label}. ${upcoming ? 'Not released yet' : 'Change status'}`}
-        onClick={() => props.onStatus(nextStatus(it, s))}
+        role="checkbox"
+        aria-checked={s === 2 ? 'true' : s === 1 ? 'mixed' : 'false'}
+        aria-label={`${it.title}: ${upcoming ? 'not released yet' : copy.seenIt}`}
+        onClick={() => props.onStatus(s === 2 ? 0 : 2)}
       >
         <StatusIcon s={s} />
       </button>
@@ -191,6 +189,11 @@ function Row(props: { it: Item; s: Status; today: string; open: boolean; onToggl
         <div class="meta narrow">
           {formatLabel(it)} · {runtime(it)}{extra ? ` · ${extra}` : ''}
         </div>
+        {canPartial && (
+          <button class={`partial${s === 1 ? ' on' : ''}`} aria-pressed={s === 1} onClick={() => props.onStatus(s === 1 ? 0 : 1)}>
+            {s === 1 ? copy.partlyOn : copy.partlyOff}
+          </button>
+        )}
         <p class="reason">{reason}</p>
       </div>
       <div class="wide">{formatLabel(it)}{extra ? <div class="muted" style="font-size:13px">{extra}</div> : null}</div>
